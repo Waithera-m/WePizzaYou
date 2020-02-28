@@ -4,10 +4,10 @@ $(document).ready(function(){
 
 
   $(".carousel-control-prev").click(function () {  
-    $("#myCarousel").carousel("prev");
+    $("#carouselmoi").carousel("prev");
   }); 
   $(".carousel-control-next").click(function () {  
-    $("#myCarousel").carousel("next");
+    $("#carouselmoi").carousel("next");
   });
 
 

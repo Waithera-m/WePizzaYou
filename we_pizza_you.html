@@ -6,12 +6,15 @@
     <link href="css/pizza.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class="top-nav">
+
+    </div>
     <div class="pizza-box">
       <h1><strong>WePizzaYou</strong></h1>
       <p>We Know Why Good Pizza Matters</p>
     </div>
     <div id="container">
-      <div class="carouselmoi" class="carousel slide" data-ride="carousel">
+      <div id="carouselmoi" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselmoi" data-slide-to="0" class="imageOne active"></li>
           <li data-target="#carouselmoi" data-slide-to="1" class="imageTwo"></li>
@@ -33,25 +36,55 @@
           <img class="d-block w-100" src="images/veggie-pizza-2-3ad3.jpg" alt="A photo of a vegetarian pizza">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselmoi" role="button" data-slide="prev">
         <span class=carousel-control-prev-icon aria-hidden="true"></span>
       </a>
-      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselmoi" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </a>
     </div>
-    
-
-
-
-
-
-
-
-
+    <div class="containerUn" style="text-align: center;">
+      <h2>About Us</h2>
+      <p>We understand that sharing meals is an integral part of each community.</br>However, we know that it is not always possible for community members to prepar meals themselves.</br>And that is why we are here. WePizzaYou offers a broad array of affordable and quality pizzas that reflect the broad gamut of tastes that characterize the human race. Check out our menu for pizzas that are sure to delight your senses!</p>
+    </div>
+    <div class="containerDeux">
+      <h1 style="text-align: center;">Our Menu</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/bbq-chicken-pizza-5-1200.jpg" alt="A photo of bbq pizza" height=300 width=400>
+            </div>
+            <div class=card-footer>
+              <h2>BBQ Pizza</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/periperi.jpeg" alt="A photo of periperi pizza" height=300 width=400>
+            </div>
+            <div class="card-footer">
+              <h2>Peri Peri Pizza</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/Chicken-Tikka-and-Jalapeno-Pizzas-970x610.jpg" alt="A photo of Chicken Tikka" height=300 width=400>
+            </div>
+            <div class="card-footer">
+              <h2>Chicken Tikka</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
-    <script src="js/pizza.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>      
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/pizza.js"></script>      
   </body>
 </html>
