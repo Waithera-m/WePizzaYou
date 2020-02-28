@@ -24,7 +24,16 @@ body {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+.containerDeux {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 50px;
 }
 .card {
   position: relative;
@@ -36,8 +45,10 @@ body {
   word-wrap: break-word;
   background-color: #fff;
   background-color: transparent;
-  /* background-clip: border-box; */
-  /* border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; */
+}
+h2 {
+  font-size: small;
+  text-align: center;
+
 }
 
