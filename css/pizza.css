@@ -51,4 +51,34 @@ h2 {
   text-align: center;
 
 }
-
+.reachUs {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+@media (min-width: 576px) {
+  .containerUn {
+    max-width: 540px;
+  }
+}
+@media (min-width: 576px) {
+  .containerDeux {
+    max-width: 540px;
+  }
+}
+@media (min-width: 576px) {
+  .reachUs {
+    max-width: 540px;
+  }
+}
