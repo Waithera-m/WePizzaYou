@@ -2,7 +2,7 @@
 #### The web application allows users to place their pizza orders, March 1, 2020 
 #### By **Waithera-m**
 ## Description
-The web application allows users to select the type, size, and quantity of pizza that they want. Users can also use the appl to select the type of crust and topping that they want.
+The web application allows users to select the type, size, and quantity of pizza that they want. Users can also use the app to select the type of crust and topping that they want.
 ## Setup/Installation Requirements
 To use the application, users need internet access and web browsers, preferably  Chrome, Safari, and Firefox.
 ## Known Bugs
