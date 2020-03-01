@@ -50,7 +50,7 @@ $(document).ready(function(){
       "delivery": 100,
       "pickup": 0
     }
-
+    
     this.price = (this.pizzas[name][size] + this.toppings[toppings] + this.crusts[crust] + this.delivery[delivery]) * quantity;
   }
 
