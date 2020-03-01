@@ -26,14 +26,38 @@ $(document).ready(function(){
 
 
 
-  function Pizza(description, ingredients, price, size){
-    this.description = description;
-    this.ingredients = ingredients;
+  function Medium (name, price){
+    this.name = name;
     this.price = price;
-    this.size = size;
   }
+  var bbqPizza = new Medium("BBQ Pizza", 700);
+  var periPeri = new Medium("Peri Peri Pizza", 700);
+  var chickenTikka = new Medium("Chicken Tikka", 700);
+  var veggieDelight = new Medium("Veggie Delght", 750);
+  var pepperoniPizza = new Medium("Pepperoni Pizza", 700);
+  var hawaiianPizza = new Medium("Hawaiian Pizza", 800);
 
-  var bbqPizza = new Pizza (["Beef Steak", "Red Onions", "Sweet Corn", "BBQ Sauce"], ["BBQ Sauce", "Pizza Cheese", "Corn", "Onion", "Beef Steak"], [700, 700, 800, 950, 950, 500], [""]
 
+  function Small (name, price){
+    this.name = name;
+    this.price = price;
+  }
+  var bbqPizza = new Small("BBQ Pizza", 600);
+  var periPeri = new Small("Peri Peri Pizza", 600);
+  var chickenTikka = new Small("Chicken Tikka", 600);
+  var veggieDelight = new Small("Veggie Delght", 650);
+  var pepperoniPizza = new Small("Pepperoni Pizza", 600);
+  var hawaiianPizza = new Small("Hawaiian Pizza", 700);
+
+  function Large (name, price){
+    this.name = name;
+    this.price = price;
+  }
+  var bbqPizza = new Large("BBQ Pizza", 900);
+  var periPeri = new Large("Peri Peri Pizza", 900);
+  var chickenTikka = new Large("Chicken Tikka", 900);
+  var veggieDelight = new Large("Veggie Delght", 950);
+  var pepperoniPizza = new Large("Pepperoni Pizza", 900);
+  var hawaiianPizza = new Large("Hawaiian Pizza", 1000);
 
   });
