@@ -24,60 +24,47 @@ $(document).ready(function(){
     $("carouselmoi").carousel(3);
   });
 
+  function Pizza(name, size, toppings, crust, quantity, delivery){
+    this.pizzas = {
+      "bbq":{"small":600, "medium":700, "large":900},
+      "periPeri":{"small":600, "medium":700, "large":900},
+      "chikenTikka":{"small":600, "medium":700, "large":900},
+      "veggieDelight":{"small":600, "medium":700, "large":900},
+      "hawaiian":{"small":600, "medium":700, "large":900}
+    };
+    this.toppings = {
+      "bacon": 100,
+      "pepperoni": 100,
+      "mushroom": 100,
+      "tikkaChicken": 100,
+      "mixPeppers":50,
+      "tomatoes":50
+    };
+    this.crusts = {
+      "crispy": 100,
+      "stuffed": 200,
+      "glutenFree": 300
+    };
 
-
-  function Medium (name, price){
-    this.name = name;
-    this.price = price;
+    this.delivery = {
+      "delivery": 100,
+      "pickup": 0
+    }
   }
-  var bbqPizza = new Medium("BBQ Pizza", 700);
-  var periPeri = new Medium("Peri Peri Pizza", 700);
-  var chickenTikka = new Medium("Chicken Tikka", 700);
-  var veggieDelight = new Medium("Veggie Delght", 750);
-  var pepperoniPizza = new Medium("Pepperoni Pizza", 700);
-  var hawaiianPizza = new Medium("Hawaiian Pizza", 800);
 
 
-  function Small (name, price){
-    this.name = name;
-    this.price = price;
-  }
-  var bbqPizza = new Small("BBQ Pizza", 600);
-  var periPeri = new Small("Peri Peri Pizza", 600);
-  var chickenTikka = new Small("Chicken Tikka", 600);
-  var veggieDelight = new Small("Veggie Delght", 650);
-  var pepperoniPizza = new Small("Pepperoni Pizza", 600);
-  var hawaiianPizza = new Small("Hawaiian Pizza", 700);
+  
 
-  function Large (name, price){
-    this.name = name;
-    this.price = price;
-  }
-  var bbqPizza = new Large("BBQ Pizza", 900);
-  var periPeri = new Large("Peri Peri Pizza", 900);
-  var chickenTikka = new Large("Chicken Tikka", 900);
-  var veggieDelight = new Large("Veggie Delght", 950);
-  var pepperoniPizza = new Large("Pepperoni Pizza", 900);
-  var hawaiianPizza = new Large("Hawaiian Pizza", 1000);
+  $('#get_pizza').on('click', function(){
+    
+    var type_of_pizza = $('#type_of_pizza').val()
+    var size_of_pizza = $('#size_of_pizza').val()
+    var toppings = $('#toppings').val()
+    var crust_of_pizza = $('#crust_of_pizza').val()
+    var quantity = $('#quantity').val();
+    var delivery = $('#delivery').val();
+    console.log([type_of_pizza, size_of_pizza, toppings, crust_of_pizza,delivery, quantity ])
 
-  function Topping (name, price){
-    this.name = name;
-    this.price = price;
-  }
-  var bacon = new Topping("Bacon", 100);
-  var pepperoni = new Topping("Pepperoni", 100);
-  var mushroom = new Topping("Mushroom", 100);
-  var tikkaChicken = new Topping("Tikka Chicken", 100);
-  var tomatoes = new Topping("Tomatoes", 50);
-  var mixPeppers = new Topping("Mix Peppers", 50);
-
-  function Crust(name, price){
-    this.name = name;
-    this.price = price;
-  }
-  var crispy = new Crust("Crispy", 100);
-  var stuffed = new Crust("Stuffed", 200);
-  var glutenFree = new Crust("Gluten-Free", 300);
-  // console.log(crispy.price)
+  });
 
   });
