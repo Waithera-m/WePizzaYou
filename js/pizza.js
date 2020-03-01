@@ -58,13 +58,13 @@ $(document).ready(function(){
 
   $('#get_pizza').on('click', function(){
     
-    var type_of_pizza = $('#type_of_pizza').val()
-    var size_of_pizza = $('#size_of_pizza').val()
+    var typeOfPizza = $('#typeOfPizza').val()
+    var sizeOfPizza = $('#sizeOfPizza').val()
     var toppings = $('#toppings').val()
-    var crust_of_pizza = $('#crust_of_pizza').val()
+    var crustOfPizza = $('#crustOfPizza').val()
     var quantity = parseInt($('#quantity').val());
     var delivery = $('#delivery').val();
-    var pizzaCost = new Pizza(type_of_pizza, size_of_pizza, toppings, crust_of_pizza, quantity, delivery);
+    var pizzaCost = new Pizza(typeOfPizza, sizeOfPizza, toppings, crustOfPizza, quantity, delivery);
 
     if(delivery === 'delivery'){
       alert("This will cost Ksh"+ pizzaCost.delivery[delivery] + " more" )
