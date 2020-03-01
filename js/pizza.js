@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#carouselmoi").carousel(data-interval="12000");
+  $("#carouselmoi").carousel();
 
 
 
@@ -59,5 +59,25 @@ $(document).ready(function(){
   var veggieDelight = new Large("Veggie Delght", 950);
   var pepperoniPizza = new Large("Pepperoni Pizza", 900);
   var hawaiianPizza = new Large("Hawaiian Pizza", 1000);
+
+  function Topping (name, price){
+    this.name = name;
+    this.price = price;
+  }
+  var bacon = new Topping("Bacon", 100);
+  var pepperoni = new Topping("Pepperoni", 100);
+  var mushroom = new Topping("Mushroom", 100);
+  var tikkaChicken = new Topping("Tikka Chicken", 100);
+  var tomatoes = new Topping("Tomatoes", 50);
+  var mixPeppers = new Topping("Mix Peppers", 50);
+
+  function Crust(name, price){
+    this.name = name;
+    this.price = price;
+  }
+  var crispy = new Crust("Crispy", 100);
+  var stuffed = new Crust("Stuffed", 200);
+  var glutenFree = new Crust("Gluten-Free", 300);
+  // console.log(crispy.price)
 
   });
