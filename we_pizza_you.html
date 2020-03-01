@@ -114,6 +114,77 @@
         </div>
       </div>
     </div>
+    <div class="placeOrder">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Place Your Order</h1>
+          <form id="order" method="POST" onsubmit="event.preventDefault()">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="type">Type</label>
+                <select id="type" class="form-control">
+                  <option value="0">Type</option>
+                  <option value="1">BBQ Pizza</option>
+                  <option value="2">Peri Peri Pizza</option>
+                  <option value="3">Chicken Tikka</option>
+                  <option value="4">Veggie Delight</option>
+                  <option value="5">Pepperoni Pizza</option>
+                  <option value="6">Hawaiian Pizza</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="size">Size</label>
+                <select id="size" class="form-control">
+                  <option value="0">Size</option>
+                  <option value="1">Small</option>
+                  <option value="2">Medium</option>
+                  <option value="3">Large</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form group col-md-6">
+                <label for="topping">Topping</label>
+                <select id="topping" class="form-control">
+                  <option value="0">Toppings</option>
+                  <option value="1">Bacon</option>
+                  <option value="2">Pepperoni</option>
+                  <option value="3">Mushroom</option>
+                  <option value="4">Tikka Chicken</option>
+                  <option value="5">Mix Peppers</option>
+                  <option value="6">Tomatoes</option>
+                </select>
+              </div>
+              <div class="form group col-md-6">
+                <label for="crust">Select Your Crust</label>
+                <select id="crust" class="form-control">
+                  <option value="0">Crust</option>
+                  <option value="1">Crispy</option>
+                  <option value="2">Stuffed</option>
+                  <option value="3">Gluten-free</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="quantity">No. of Pizzas</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" placeholder="1">
+    
+              </div>
+              <div class="form-group col-md-6">
+                <label for="deliver">Delivery/Pickup</label>
+                <select id="deliver" class="form-control">
+                  <option value="0">Delivery</option>
+                  <option value="1">Pickup</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
     <div class="reachUs">
       <a href="#" class="fa fa-twitter"></a>
       <a href="#" class="fa fa-facebook"></a>
