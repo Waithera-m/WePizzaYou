@@ -67,10 +67,10 @@ $(document).ready(function(){
     var pizzaCost = new Pizza(typeOfPizza, sizeOfPizza, toppings, crustOfPizza, quantity, delivery);
 
     if(delivery === 'delivery'){
-      alert("This will cost Ksh"+ pizzaCost.delivery[delivery] + " more" )
+      swal("This will cost Ksh"+ pizzaCost.delivery[delivery] + " more" )
     }
 
-    alert("Your Pizza cost is: " + pizzaCost.price);
+    swal("Your Pizza cost is: " + pizzaCost.price);
     // console.log([type_of_pizza, size_of_pizza, toppings, crust_of_pizza,delivery, quantity ])
     
     // console.log(pizzaCost);
@@ -81,3 +81,7 @@ $(document).ready(function(){
   });
 
   });
+
+  function clearForm() {
+    document.getElementsByTagName("form").reset();
+  }
