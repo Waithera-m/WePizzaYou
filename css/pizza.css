@@ -10,15 +10,11 @@ body {
   text-align: center;
   font-family: 'Caveat', ;
 }
-.container {
-  width: 1000px;
-  height: 400px;
-}
 #carouselmoi {
   position: relative;
 }
 .containerUn {
-  width: 100%;
+  width: 80%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -32,7 +28,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* text-align: center; */
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -42,9 +38,8 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 0;
+  width: 100%;
   word-wrap: break-word;
-  background-color: #fff;
   background-color: transparent;
 }
 h2 {
@@ -90,7 +85,7 @@ h2 {
   background: #125688;
   color: white;
 }
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .containerUn {
     max-width: 540px;
   }
@@ -104,4 +99,4 @@ h2 {
   .reachUs {
     max-width: 540px;
   }
-}
+} */

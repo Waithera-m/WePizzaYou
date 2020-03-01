@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#carouselmoi').carousel({interval: 3000});
+  $("#carouselmoi").carousel(data-interval="6000");
 
 
 
@@ -23,6 +23,17 @@ $(document).ready(function(){
   $(".imageFour").click(function(){
     $("carouselmoi").carousel(3);
   });
+
+
+
+  function Pizza(description, ingredients, price, size){
+    this.description = description;
+    this.ingredients = ingredients;
+    this.price = price;
+    this.size = size;
+  }
+
+  var bbqPizza = new Pizza (["Beef Steak", "Red Onions", "Sweet Corn", "BBQ Sauce"], ["BBQ Sauce", "Pizza Cheese", "Corn", "Onion", "Beef Steak"], [700, 700, 800, 950, 950, 500], [""]
 
 
   });
