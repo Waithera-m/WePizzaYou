@@ -50,10 +50,11 @@ $(document).ready(function(){
       "delivery": 100,
       "pickup": 0
     }
+
+    this.price = (this.pizzas[name][size] + this.toppings[toppings] + this.crusts[crust] + this.delivery[delivery]) * quantity;
   }
 
 
-  
 
   $('#get_pizza').on('click', function(){
     
@@ -61,9 +62,21 @@ $(document).ready(function(){
     var size_of_pizza = $('#size_of_pizza').val()
     var toppings = $('#toppings').val()
     var crust_of_pizza = $('#crust_of_pizza').val()
-    var quantity = $('#quantity').val();
+    var quantity = parseInt($('#quantity').val());
     var delivery = $('#delivery').val();
-    console.log([type_of_pizza, size_of_pizza, toppings, crust_of_pizza,delivery, quantity ])
+    var pizzaCost = new Pizza(type_of_pizza, size_of_pizza, toppings, crust_of_pizza, quantity, delivery);
+
+    if(delivery === 'delivery'){
+      alert("This will cost Ksh"+ pizzaCost.delivery[delivery] + " more" )
+    }
+
+    alert("Your Pizza cost is: " + pizzaCost.price);
+    // console.log([type_of_pizza, size_of_pizza, toppings, crust_of_pizza,delivery, quantity ])
+    
+    // console.log(pizzaCost);
+    // console.log("Your pizza price is:", pizzaCost.price);
+    // console.log("Your pizza type price is:", pizzaCost.pizzas[type_of_pizza][size_of_pizza]);
+
 
   });
 
