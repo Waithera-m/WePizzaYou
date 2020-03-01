@@ -50,6 +50,7 @@ h2 {
 form{
   margin-left: 280px;
 }
+input[type="checkout"].btn-block,
 .reachUs {
   width: 100%;
   padding-right: 15px;

@@ -47,19 +47,21 @@ $(document).ready(function(){
     };
 
     this.delivery = {
-      "delivery": 100,
+      "delivery": 200,
       "pickup": 0
     }
     
     this.price = (this.pizzas[name][size] + this.toppings[toppings] + this.crusts[crust] + this.delivery[delivery]) * quantity;
   }
-
+Pizza.prototype.details=function(){
+  return this.price + " Your order will be ready soon"
+}
 
 
   $("#get_pizza").on("click", function(){
     
     var typeOfPizza = $("#typeOfPizza").val()
-    var sizeOfPizza = $("#sizeOfPizz").val()
+    var sizeOfPizza = $("#sizeOfPizza").val()
     var toppings = $("#toppings").val()
     var crustOfPizza = $("#crustOfPizza").val()
     var quantity = parseInt($("#quantity").val());
@@ -67,15 +69,18 @@ $(document).ready(function(){
     var pizzaCost = new Pizza(typeOfPizza, sizeOfPizza, toppings, crustOfPizza, quantity, delivery);
 
     if(delivery === "delivery"){
-      swal("This will cost Ksh"+ pizzaCost.delivery[delivery] + " more" )
-    }
+        alert("This will cost Ksh"+ pizzaCost.delivery[delivery] + " more" )
+      }
 
-    swal("Your Pizza cost is: " + pizzaCost.price);
-    // console.log([type_of_pizza, size_of_pizza, toppings, crust_of_pizza,delivery, quantity ])
+  
+    // swal("Your Pizza cost is: " + pizzaCost.price)
+    swal("Your Pizza cost is: " + pizzaCost.price)
+    
+    // console.log([typeOfPizza, sizeOfPizza, toppings, crustOfPizza,delivery, quantity ])
     
     // console.log(pizzaCost);
     // console.log("Your pizza price is:", pizzaCost.price);
-    // console.log("Your pizza type price is:", pizzaCost.pizzas[type_of_pizza][size_of_pizza]);
+    console.log("Your pizza type price is:", pizzaCost.pizzas[typeOfPizza][sizeOfPizza]);
 
 
   });
