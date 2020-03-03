@@ -187,16 +187,6 @@
                 </select>
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <label for="deliveryLocation">Location:</label>
-                <select id="deliveryLocation" style="display:none" class="form-control">
-                  <option value="ruaka">Ruaka</option>
-                  <option value="runda">Runda</option>
-                  <option value="muthaiga">Muthaiga</option>
-                </select>
-              </div>
-            </div>
             <div class="form-group">
               <button class="btn btn-dark" id="get_pizza">CHECKOUT</button>
               <button class="btn btn-dark" type="reset">RESET</button>
@@ -204,7 +194,14 @@
           </form>
         </div>
       </div>
-      
+      <div id="showOrder">
+        <p>Your Order: <span class="typeOfPizza"></span></p>
+        <p>Size: <span class="sizeOfPizza"></span></p>
+        <p>Crust: <span class="crustOfPizza"></span></p>
+        <p>Toppings: <span class="toppings"></span></p>
+        <p>Quantity: <span class="quantity"></span></p>
+        <p>Total: <span class="total"></span></p>
+      </div>
     </div>
     <div class="reachUs">
       <a href="#" class="fa fa-twitter"></a>
