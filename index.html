@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
   <head>
     <title>WePizzaYou</title>
@@ -9,11 +9,20 @@
     
   </head>
   <body>
-    <div class="pizza-box">
-      <h1><strong>WePizzaYou</strong></h1>
-      <p>We Know Why Good Pizza Matters</p>
-    </div>
-    <div id="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <a class="navbar-brand" href="#">WePizzaYou</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#menu">Menu</a>
+          <a class="nav-item nav-link" href="#place">Place Order</a>
+        </div>
+      </div>
+    </nav>
+    <div id="container mt-5">
       <div id="carouselmoi" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselmoi" data-slide-to="0" class="active"></li>
@@ -23,16 +32,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/1_oyPaDNs0qtB6yCD3HQaQJg.jpeg" alt="A photo of a pizza">
+            <img class="d-block w-100" src="images/1_oyPaDNs0qtB6yCD3HQaQJg.jpeg" alt="A photo of a pizza" class="img-fluid" height="490">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/oven_.jpg" alt="A photo of a pizza in an oven">
+            <img class="d-block w-100" src="images/oven_.jpg" alt="A photo of a pizza in an oven" class="img-fluid" height="490">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/pizza-making-activities.jpg" alt="A photo of a person making pizza">
+            <img class="d-block w-100" src="images/pizza-making-activities.jpg" alt="A photo of a person making pizza" class="img-fluid" height="490">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/veggie-pizza-2-3ad3.jpg" alt="A photo of a vegetarian pizza">
+            <img class="d-block w-100" src="images/veggie-pizza-2-3ad3.jpg" alt="A photo of a vegetarian pizza" class="img-fluid" height="490">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselmoi" role="button" data-slide="prev">
@@ -43,87 +52,133 @@
         </a>
       </div>
     </div>
-    <div class="containerUn" style="text-align: center;">
+    <div class="container mt-5" style="text-align: center;">
       <h1>About Us</h1>
       <p>We understand that sharing meals is an integral part of each community.</br>However, we know that it is not always possible for you to prepare meals.</br>And that is why we are here. WePizzaYou offers a broad array of affordable and quality pizzas that reflect the broad gamut of tastes that characterize the human race. Check out our menu for pizzas that are sure to delight your senses!</p>
     </div>
-    <div class="containerDeux" id="menu">
+    <div class="container-fluid" id="menu">
       <h1 style="text-align: center;">Our Menu</h1>
-      <div class="row">
+      <hr>
+      <div class="row mb-5">
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/bbq-chicken-pizza-5-1200.jpg" alt="A photo of bbq pizza" height=300 width=400>
-            </div>
-            <div class=card-footer>
-              <h2>BBQ Pizza</h2>
-              <p>Beef Steak, Red Onions, Sweet Corn, BBQ Sauce</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flip-card-front">
+                    <img src="images/bbq-chicken-pizza-5-1200.jpg" alt="A photo of bbq pizza" height=300 width=400>
+                  </div>
+                </div>
+                <div class="flip-card-back mb-4">
+                  <h2>BBQ Pizza</h2>
+                  <p>Beef Steak, Red Onions, Sweet Corn, BBQ Sauce</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/periperi.jpeg" alt="A photo of periperi pizza" height=300 width=400>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flip-card-front">
+                    <img src="images/periperi.jpeg" alt="A photo of periperi pizza" height=300 width=400>
+                  </div>
+                </div>
+                <div class="flip-card-back mt-4">
+                  <h2>Peri Peri Pizza</h2>
+                  <p>Pizza Sauce, Pizza Cheese, Grilled chicken, Pineapple, Red Chilli, Tomato</p>
+                </div>
+              </div>
             </div>
-            <div class="card-footer">
-              <h2>Peri Peri Pizza</h2>
-              <p>Pizza Sauce, Pizza Cheese, Grilled chicken, Pineapple, Red Chilli, Tomato</p>
-            </div>
+            
           </div>
+          
         </div>
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/Chicken-Tikka-and-Jalapeno-Pizzas-970x610.jpg" alt="A photo of Chicken Tikka" height=300 width=400>
-            </div>
-            <div class="card-footer">
-              <h2>Chicken Tikka</h2>
-              <p>Pizza Sauce, Pizza Cheese, Mixed Peppers, Mushroom, Onion, Red Chilli, Tikka Chicken</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flip-card-front">
+                    <img src="images/Chicken-Tikka-and-Jalapeno-Pizzas-970x610.jpg" alt="A photo of Chicken Tikka" height=300 width=400>
+                  </div>
+                </div>
+                <div class="flip-card-back mt-4">
+                  <h2>Chicken Tikka</h2>
+                  <p>Pizza Sauce, Pizza Cheese, Mixed Peppers, Mushroom, Onion, Red Chilli, Tikka Chicken</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/veggie-delight.jpg" alt="A photo of vegeterian pizza" height=300 width=400>
-            </div>
-            <div class="card-footer">
-              <h2>Veggie Delight</h2>
-              <p>Pizza Sauce, Pizza Cheese, Black Olives, Mixed Peppers, Mushroom, Onions, Tomatoes</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flip-card-front">
+                    <img src="images/veggie-delight.jpg" alt="A photo of vegeterian pizza" height=300 width=400>
+                  </div>
+                </div>
+                <div class="flip-card-back mt-4">
+                  <h2>Veggie Delight</h2>
+                  <p>Pizza Sauce, Pizza Cheese, Black Olives, Mixed Peppers, Mushroom, Onions, Tomatoes</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/pepperoni.jpg" alt="A photo of pepperoni pizza" height=300 width=400>
-            </div>
-            <div class="card-footer">
-              <h2>Pepperoni Pizza</h2>
-              <p>Beef Pepperoni, Mozzarella Cheese</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flip-card-front">
+                    <img src="images/pepperoni.jpg" alt="A photo of pepperoni pizza" height=300 width=400>
+                  </div>
+                </div>
+                <div class="flip-card-back mt-4">
+                  <h2>Pepperoni Pizza</h2>
+                  <p>Beef Pepperoni, Mozzarella Cheese</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/Hawaiian.jpg" alt="A photo of Hawaiian pizza" height=300 width=400>
-            </div>
-            <div class="card-footer">
-              <h2>Hawaiian Pizza</h2>
-              <p>Beef, Ham, Pineapples</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flip-card-front">
+                    <img src="images/Hawaiian.jpg" alt="A photo of Hawaiian pizza" height=300 width=400>
+                  </div>
+                </div>
+                <div class="flip-card-back mt-4">
+                  <h2>Hawaiian Pizza</h2>
+                  <p>Beef, Ham, Pineapples</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
-    <div class="placeOrder">
+    <div class="container mt-5">
+      <h1 class="text-center" id="place">Place Your Order</h1>
       <div class="row">
+        
         <div class="col-md-10">
-          <h1 style="margin-left: 500px;">Place Your Order</h1>
+          
           <form id="order" method="POST" onsubmit="event.preventDefault()">
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -188,11 +243,12 @@
               </div>
             </div>
             <div class="form-group">
-              <button class="btn btn-dark" id="get_pizza">CHECKOUT</button>
-              <button class="btn btn-dark" type="reset">RESET</button>
+              <button class="btn btn-dark btn-sm mr-2" id="get_pizza">CHECKOUT</button>
+              <button class="btn btn-dark btn-sm" type="reset">RESET</button>
             </div>
           </form>
         </div>
+        <div class="col-md-2"></div>
       </div>
       <div id="showOrder">
         <p>Your Order: <span class="typeOfPizza"></span></p>
@@ -204,10 +260,10 @@
       </div>
     </div>
     <div class="reachUs">
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-reddit"></a>
-      <a href="#" class="fa fa-instagram"></a>
+      <a href="https://twitter.com/home" target="_blank" class="fa fa-twitter"></a>
+      <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+      <a href="http://www.reddit.com" target="_blank" class="fa fa-reddit"></a>
+      <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
     </div>
     <footer class="container" style="text-align: center;">
       <p>&copy; Waithera-m 2020</p>
